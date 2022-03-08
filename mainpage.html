@@ -52,7 +52,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            object-fit: contain;
+            /*object-fit: contain;*/
         }
         #quotes{
             font-size: 35px;
@@ -71,8 +71,8 @@
                 background-size: cover;
             }
             .box {
-                width: 150px;
-                height: 150px;;
+                width: 100px;
+                height: 100px;;
             }
             #quotes
             {
@@ -83,6 +83,12 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <script>
+        function fn(){
+            alert("😊 Play the audio 😊");
+        }
+        fn();
+    </script>
     <bgsound src="./music/1.mp3">
       
     <div class="text-center p-5 d-flex justify-content-center">
@@ -90,7 +96,10 @@
     </div>
 
     <div class="text-center p-3 d-flex justify-content-center">
-        
+        <audio controls style="width: 100px; height:30px;">
+            <source src="./music/1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
     </div>
 
 
